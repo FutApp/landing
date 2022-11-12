@@ -235,6 +235,11 @@ section:nth-child(even){
   cursor:pointer;
 }
 
+.form_cta:hover{
+  background-color: #a283f8;
+  cursor:pointer;
+}
+
 footer {
   background-color: black;
   color: #fff;
