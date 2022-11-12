@@ -10,7 +10,9 @@ body {
   background: linear-gradient(to right, #a181ff, #73cef5, #a5fecb);
 
 }
-
+ 
+/*------Header------*/
+ 
 header {
   justify-content: space-between;
   align-items: center;
@@ -60,12 +62,12 @@ header {
   z-index: 1;
 }
 
+/*--------Section --------*/
 section {
   font-family: Caveat;
-  align-items: center;
 }
 
-/*--------Section --------*/
+
 .home {
   font-family: 'Irish Grover';
   font-size: 2rem;
@@ -118,6 +120,20 @@ section {
   width: 100%;
   text-align: center;
 }
+.cards{
+  display: flex;
+  justify-content:space-between;
+}
+
+.cards .card{
+  width: 330px;
+  padding: 15px;
+}
+
+.row ul li{
+  list-style-type: none;
+}
+
 
 .mysection {
   background-color: rgb(246, 250, 253);
@@ -125,7 +141,7 @@ section {
 
 .avatar ul {
   list-style-type: none;
-  margin: 0;
+  margin: 2rem 0;
   padding: 0;
 }
 
@@ -252,5 +268,11 @@ footer {
     width: 50vw;
   }
 
-
+  .cards{
+    display: flex;
+    flex-direction:column;
+  }
+  .cards .card{
+    width:100%;
+  }
 }
