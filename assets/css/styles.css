@@ -60,14 +60,19 @@ header {
   z-index: 1;
 }
 
+section{
+  font-family: Caveat;
+  align-items:center;
+}
 
-/*--------Section: Home --------*/
-
+/*--------Section --------*/
+.home{
+  font-family: 'Irish Grover';
+}
  .row {
   display: flex;
   align-items: center;
   padding: 2rem 10rem;
-  font-family: 'Irish Grover', cursive;
   flex-wrap: wrap;
 }
 
@@ -85,9 +90,15 @@ header {
 }
 
 .row .content h1{
-  font-size: 2rem;
+  font-size: 1.5 rem;
+}
+.row .content h3{
+  font-size: 1rem;
 }
 
+.row .content p{
+  font-size: 1.5rem;
+}
 
 .row .content .playstorebtn {
   display: block;
@@ -99,9 +110,49 @@ header {
   width: 100%;
 }
 
+.row .container{
+  width: 100%;
+  text-align: center;
+}
+
 .mysection {
   background-color: rgb(246, 250, 253);
-  font-family: 'Caveat', cursive;
+}
+
+.avatar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.avatar ul li {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: inline-block;
+  position: relative;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.avatar li:nth-child(1) { 
+  background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJesc2i7_KVkNrqZbzNkz3ds_570GNfR-Rg6oUFJejzEY2G9ze");
+  background-size: contain;
+  background-repeat: no-repeat;}
+.avatar li:nth-child(2) { background: green; }
+.avatar li:nth-child(3) { background: purple; }
+.avatar li:nth-child(4) { background: tomato; }
+
+.avatar li:nth-child(n+2) { margin-left: -50px; }
+
+ .avatar ul:hover li:nth-child(n+2) {
+   margin-left: -10px;
+}
+.avatar ul li img{
+  width: 100%;
+  
 }
 
 footer {
@@ -125,8 +176,6 @@ footer {
     transform: scale(1);
   }
 }
-
-
 
 
 @media (max-width: 640px) {
