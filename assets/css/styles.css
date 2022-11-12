@@ -32,7 +32,7 @@ header {
   width: 1.5rem;
 }
 
-.main-menu{
+.main-menu {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -60,43 +60,47 @@ header {
   z-index: 1;
 }
 
-section{
+section {
   font-family: Caveat;
-  align-items:center;
+  align-items: center;
 }
 
 /*--------Section --------*/
-.home{
+.home {
   font-family: 'Irish Grover';
+  font-size: 2rem;
 }
- .row {
+
+.row {
   display: flex;
   align-items: center;
   padding: 2rem 10rem;
   flex-wrap: wrap;
 }
 
-.row .image{
+.row .image {
   width: 50%;
   text-align: center;
 }
-.row .image img{
-  width: 50%;
-  animation: animate ease-in-out 2s  infinite alternate;
- }
 
- .row .content {
+.row .image img {
+  width: 50%;
+  animation: animate ease-in-out 2s infinite alternate;
+}
+
+.row .content {
   width: 50%;
 }
 
-.row .content h1{
+.row .content h1 {
   font-size: 1.5 rem;
 }
-.row .content h3{
+
+.row .content h3 {
   font-size: 1rem;
 }
 
-.row .content p{
+.row .content p {
   font-size: 1.5rem;
 }
 
@@ -110,7 +114,7 @@ section{
   width: 100%;
 }
 
-.row .container{
+.row .container {
   width: 100%;
   text-align: center;
 }
@@ -132,27 +136,53 @@ section{
   border: 2px solid white;
   display: inline-block;
   position: relative;
-  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
   -webkit-transition: .2s ease;
   transition: .2s ease;
 }
 
-.avatar li:nth-child(1) { 
+
+.avatar li:nth-child(1) {
+  background-image: url("https://i.pinimg.com/280x280_RS/31/ad/92/31ad9255f0b14c4bf2136132215d1551.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.avatar li:nth-child(2) {
+  background-image: url("https://i.pinimg.com/280x280_RS/31/ad/92/31ad9255f0b14c4bf2136132215d1551.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.avatar li:nth-child(3) {
+  background-image: url("https://i.pinimg.com/280x280_RS/31/ad/92/31ad9255f0b14c4bf2136132215d1551.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.avatar li:nth-child(4) {
+  background-image: url("https://media-exp1.licdn.com/dms/image/C4E03AQEeufFF6k8Eaw/profile-displayphoto-shrink_800_800/0/1573343344951?e=2147483647&v=beta&t=JJXl2GHc-pPHV9Y8vuXHFEdpH3Auyw7E55-cwoa2blA");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.avatar li:nth-child(5) {
   background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJesc2i7_KVkNrqZbzNkz3ds_570GNfR-Rg6oUFJejzEY2G9ze");
   background-size: contain;
-  background-repeat: no-repeat;}
-.avatar li:nth-child(2) { background: green; }
-.avatar li:nth-child(3) { background: purple; }
-.avatar li:nth-child(4) { background: tomato; }
-
-.avatar li:nth-child(n+2) { margin-left: -50px; }
-
- .avatar ul:hover li:nth-child(n+2) {
-   margin-left: -10px;
+  background-repeat: no-repeat;
 }
-.avatar ul li img{
+
+.avatar li:nth-child(n+2) {
+  margin-left: -50px;
+}
+
+.avatar ul:hover li:nth-child(n+2) {
+  margin-left: -10px;
+}
+
+.avatar ul li img {
   width: 100%;
-  
+
 }
 
 footer {
@@ -181,8 +211,8 @@ footer {
 @media (max-width: 640px) {
   .main-menu {
     flex-direction: column;
-    margin-top:0;
-    margin-right:2rem;
+    margin-top: 0;
+    margin-right: 2rem;
     width: 50vw;
     background-color: #85cfed;
     transition: transform 0.3s;
@@ -190,22 +220,37 @@ footer {
     transform: translateY(-100vh);
   }
 
-  .main-menu--show{
-    transform:translateY(0);
+  .main-menu--show {
+    transform: translateY(0);
   }
-  
- .btnmenu {
+
+  .btnmenu {
     display: inline;
   }
- 
-   .row .content {
+
+  .row {
+    padding: 2rem;
+  }
+
+  .row .content {
     width: 100%;
     text-align: center;
     padding: 2rem;
   }
-  .row .image{
+
+  .row .image {
     width: 100%;
     text-align: center;
   }
-  
+
+  .row .content .playstorebtn {
+    display: block;
+    width: 100%;
+  }
+
+  .playstorebtn img {
+    width: 50vw;
+  }
+
+
 }
