@@ -20,14 +20,10 @@ header {
   display: flex;
   padding: 2rem 1.5rem;
   z-index: 100;
-  background-color: rgba(255, 255, 255, 0.147);
-}
-
-.headertc{
   background-color:black;
   color: white;
-}
 
+}
 .maintc{
   width: 100%;
   text-align: center;
@@ -45,6 +41,7 @@ header {
   font-size: 1.5rem;
   display: inline;
   font-family: 'Irish Grover', cursive;
+ /* color: black;*/
 }
 
 .logo img {
@@ -61,7 +58,7 @@ header {
 .main-menu li a {
   margin: 1rem;
   font-size: 1rem;
-  color: rgb(0, 0, 0);
+ /* color: rgb(0, 0, 0);*/
   font-weight: bold;
   text-decoration: none;
 }
@@ -81,11 +78,11 @@ header {
 
 a{
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-decoration: none;
 }
 a:active{
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 a:hover{
