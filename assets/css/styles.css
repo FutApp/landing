@@ -23,6 +23,24 @@ header {
   background-color: rgba(255, 255, 255, 0.147);
 }
 
+.headertc{
+  background-color:black;
+  color: white;
+}
+
+.maintc{
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.maintc h2{
+  margin: 1rem;
+  font-family: 'Irish Grover';
+}
+
 .logo {
   font-size: 1.5rem;
   display: inline;
@@ -60,6 +78,20 @@ header {
   display: none;
   z-index: 1;
 }
+
+a{
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+a:active{
+  color: white;
+}
+
+a:hover{
+  color:#a0edf7;
+}
+
 
 /*--------Section --------*/
 section {
@@ -122,6 +154,7 @@ section:nth-child(even){
   width: 100%;
   text-align: center;
 }
+
 .cards{
   display: flex;
   justify-content:space-between;
